@@ -1,0 +1,213 @@
+
+        p {
+            /*      top  right  bottom  left */
+            margin: 0    0      0       0;
+          }
+          h1, h2, h3, h4 {
+            display: inline;
+            ;
+        }
+  
+  
+          body {
+              background-color: rgb(1, 31, 53) !important;
+          }
+          .QueNumber {
+              padding-top: 17pt;
+              padding-left: 41pt;
+              text-indent: 0pt;
+              text-align: center;
+          }
+          .myQueNumber {
+              padding-top: 17pt;
+              padding-left: 41pt;
+              text-indent: 0pt;
+              text-align: center;
+          }
+  
+          img {
+            width: 100%;
+            height: auto;
+          }
+  
+          .option{
+              padding-top: 11pt;
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 115%;
+              text-align: left;
+              font-size: 16px;
+          }
+  
+          .optionbody{
+              padding-top: 11pt;
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 115%;
+              text-align: left;
+              font-size: 16px;
+          }
+  
+          .answer{
+              font-size: 16px;
+          }
+  
+          .explanation{
+              font-size: 16px;
+          }
+  
+         table
+          
+          {
+              width: 90%;
+              border-radius: 10px;
+              background-color: white;
+              border-collapse: separate !important;
+              margin: 50px auto;
+              border-spacing: 0px 30px;
+              
+          }
+          th{ 
+          border-style: none !important ;
+           border-radius: 50px;  
+           padding-top: 1%;
+           padding-bottom: 1%;
+           
+          
+           
+          }
+
+          td{ 
+            font-size: 1rem; 
+           padding: 20px 6% 6% ;
+            font-family: ui-san-serif;
+          }
+        
+         
+          
+        
+
+        
+         .QueRow{
+          border: 1px;
+          border-radius: 50px !important;
+          font-size: 0.8rem;
+           font-family: ui-san-serif;
+
+         }
+
+
+          
+
+         @media ( min-width: 900px ){
+            th{ font-size: 1rem;}
+            #bank{
+              padding-left: 10% ;
+              padding-right: 10%;
+             }
+           
+           }
+           @media ( max-width: 900px) and ( min-width:500px ){
+            th{ font-size: 0.8rem;}
+            #bank{
+              padding-left:0% ;
+              padding-right: 0%;
+             }
+            td{ 
+            font-size: 1rem;}
+           }
+           @media ( max-width: 500px){
+            th{ font-size: 0.6rem;}
+            .Timer{ padding-left: 50px; 
+            }
+            #bank{ padding-left: 50px;}
+            td{ 
+              font-size: 0.8rem;}
+           .both{ 
+              font-size:0.6rem !important ;
+              margin: 0% 3% !important;
+              }
+           }
+
+
+  
+          th:nth-child(odd) {
+              background-color: rgb(1, 31, 53);
+              border-width: 0.2em;
+              color: white;
+              
+          }
+  
+  
+  
+          .initial_page {
+            text-decoration: none;
+            text-align: center;
+       
+          }
+  
+  
+          .both {
+            -webkit-border-radius: 28;
+              -moz-border-radius: 28;
+              border-radius: 30px;
+              font-family: Courier New;
+              color: #ffffff;
+              font-size: 1rem;
+              background: #011f35;
+              padding: 10px 20px 10px 20px;
+              text-decoration: none;
+              margin: 0% 5%;
+              /* position: relative;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%)  */
+            }
+  
+  
+    
+  
+                      
+          .both:hover {
+              background: #ffffff;
+              text-decoration: none;
+              color: #011f35;
+            }
+  
+
+
+           /*Footer */
+
+           footer{ 
+            background-color: rgb(39, 38, 38);
+           text-align: center;
+           font-size: 0.8rem;
+           color: #4d4d4d;
+           margin-top: 50px;
+           }
+   
+            
+            /* LOADER */
+            
+            /* #loader {
+              border: 1.6rem solid white;
+              border-radius: 50%;
+              border-top: 1.6rem solid #56a5eb;
+              width: 12rem;
+              height: 12rem;
+              animation: spin 2s linear infinite;
+            }
+            
+            @keyframes spin {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            } */
+            
+  
+  
+  
+  

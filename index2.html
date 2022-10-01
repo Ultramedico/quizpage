@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- New css -->
+  <link rel="stylesheet" href="css/styles2.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+ 
+  <table>
+    <tr >
+      <th class="shadow" >
+        <h3 class="myQueNumber"></h3><a href="#"  class="end"> </a>
+        <span id="minutes"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+        </svg> 1/5 [Q] </span>
+           
+           
+
+        <h3 class="myQueNumber"></h3><a href="#" class="end"> </a>
+        <span id="bank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+          <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+        </svg>Size [1075]</span>
+
+        <h3 class="myQueNumber"></h3><a href="#" class="end"> </a>
+       <span class="Timer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+        <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
+        <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
+      </svg>Time spent:</span>  <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
+        
+        <h3 class="myQueNumber"></h3><a href="#"  class="end"> </a>
+        <span class="Timer" id="scoreid"> Score 20</span>
+        
+        
+        </th>
+    </tr>
+    
+
+    <tr class="QueRow shadow" >
+        <td  >
+          <span>Category: </span> <span class="myQueNumber2" id="category">CompTIA_Security_Plus(SY0601)</span><a href="#" class="end"> </a>
+          
+          <ul class="question" id="que">
+  <h3> Question : 1</h3></ul>
+          <ul class="optionBodyA options" id="optionBodyA">
+  
+      <img src="">
+     
+           A new PKI is being built at a company, but the network administrator has concerns about spikes of traffic occurring twice a day due to clients checking the status of the certificates. Which of the following should be implemented to reduce the spikes in traffic? <br>
+       
+  
+              <br>    
+            <label class="correct0" id="testA0">   <input type="radio" value="0" class=" 1" id="A" name="A new PKI is being built at a company, but the network administrator has concerns about spikes of traffic occurring twice a day due to clients checking the status of the certificates. Which of the following should be implemented to reduce the spikes in traffic?" onclick="selectradio(this.value, this.id)">A. CRL  </label>
+               
+              
+                  
+              <br>    
+            <label class="correct1" id="testB1">   <input type="radio" value="1" class=" 2" id="B" name="A new PKI is being built at a company, but the network administrator has concerns about spikes of traffic occurring twice a day due to clients checking the status of the certificates. Which of the following should be implemented to reduce the spikes in traffic?" onclick="selectradio(this.value, this.id)">B. OCSP  </label>
+               
+              
+                  
+              <br>    
+            <label class="correct0" id="testC0">   <input type="radio" value="0" class=" 3" id="C" name="A new PKI is being built at a company, but the network administrator has concerns about spikes of traffic occurring twice a day due to clients checking the status of the certificates. Which of the following should be implemented to reduce the spikes in traffic?" onclick="selectradio(this.value, this.id)">C. SAN  </label>
+               
+              
+                  
+              <br>    
+            <label class="correct0" id="testD0">   <input type="radio" value="0" class=" 4" id="D" name="A new PKI is being built at a company, but the network administrator has concerns about spikes of traffic occurring twice a day due to clients checking the status of the certificates. Which of the following should be implemented to reduce the spikes in traffic?" onclick="selectradio(this.value, this.id)">D. OID   </label>
+               
+              
+                  </ul></td>
+      </tr>
+
+      <tr>
+        <td>
+  
+          <h3 id="explanation2" class="explanation2"><p class="1" id="test2B" style="background-color: rgba(13, 211, 89, 0.39);">
+            Answer: B. 
+           Explanation:
+            </p></h3>
+          <h3 id="explanation1" class="explanation1"></h3>
+          <h3 id="explanation3" class="explanation3"></h3>
+    
+  
+            
+         
+          <!-- <button href="#" class="previous both" id="previous"  > "Previous" </button> -->
+          <h3 id="previous"><button href="#" class="previous both" id="previous"> Previous </button>  </h3>
+          <h3 id="end"><button href="#" class="next both" id="end"> End </button></h3>
+          <h3 id="next">
+  <button href="#" id="next" class="next both "> Next</button><br>
+  
+  </h3>
+  
+          <!-- <br><a id="theend" class="both" href="index.html"></a> -->
+          <!-- <button href="#" id='next' class="next both " >Next</button> -->
+  
+          <!-- <div class="button">
+            <button type="button" class="btn" id="btn" onclick="incrementer()">0</button>
+          </div>
+   -->
+  
+          <!-- <button href="#" class=" both" id="myBtn">💬 Discussion</button>
+          <div id="myModal" class="modal">
+  
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="top-bar">
+                <h1>
+                    My Forum
+                </h1>
+            </div> -->
+            <!-- <textarea>
+            </textarea>
+  <button class="commentadd" >add comment</button> -->
+  
+  
+  <!-- <form onSubmit="return false"><br>
+    Comments:<br> <input type="text" class="textarea" id="usercomment"/><br><br>
+    
+    <input type="submit" value="Submit" id=newcomment onclick="formdata()"/><br>
+    </form> -->
+  
+  
+  <!-- 
+    <form action="PayslipServlet" method="get">
+      First name:   <input type="text" name="fname" id="fname"><br/>
+      Name: <span id="fullName"></span>
+      <input id="showName" type="button" value="Submit" />
+    </form> -->
+  
+  
+  
+  <!-- 
+  <div class="comments">
+  </div>
+            <div class="main" >
+                <ol id="main">
+                  
+                </ol>
+            </div>
+          </div>
+  
+      </div>
+   -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+          <!-- <a href="#" class="discussion both">💬 Discission </a>
+          <i class="bi bi-forward"></i> -->
+  
+        </td>
+      </tr>
+  </table>
+  
+
+ <footer>
+   Copyright 2022-Actual Tests
+ </footer>
+   
+  <script src="javascript/questions-script-3e.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
