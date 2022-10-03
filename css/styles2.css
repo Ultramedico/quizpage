@@ -19,8 +19,8 @@
               text-align: center;
           }
           .myQueNumber {
-              padding-top: 17pt;
-              padding-left: 41pt;
+              padding-top: 2%;
+              padding-left: 5%;
               text-indent: 0pt;
               text-align: center;
           }
@@ -72,7 +72,7 @@
            border-radius: 50px;  
            padding-top: 1%;
            padding-bottom: 1%;
-           
+           text-align: center !important;
           
            
           }
@@ -107,26 +107,31 @@
              }
            
            }
-           @media ( max-width: 900px) and ( min-width:500px ){
-            th{ font-size: 0.8rem;}
-            #bank{
-              padding-left:0% ;
-              padding-right: 0%;
-             }
+           @media ( max-width: 900px) and ( min-width:480px ){
+            th{ font-size: 0.8rem !important;}
+            
             td{ 
-            font-size: 1rem;}
+            font-size: 1rem !important;}
            }
-           @media ( max-width: 500px){
-            th{ font-size: 0.6rem;}
-            .Timer{ padding-left: 50px; 
-            }
-            #bank{ padding-left: 50px;}
+           @media ( max-width: 480px){
+            th{ font-size: 0.4rem !important;}
+           
+            
             td{ 
-              font-size: 0.8rem;}
+              font-size: 0.8rem !important;}
            .both{ 
-              font-size:0.6rem !important ;
-              margin: 0% 3% !important;
-              }
+              font-size:0.4rem !important ;
+              margin: 3% 3% !important;
+             padding: 10px 15px 10px 15px !important;   
+            }
+            .myQueNumber {
+                padding-top: 2%;
+                padding-left: 3%;
+                text-indent: 0pt;
+                text-align: center;
+            }
+            
+            
            }
 
 
@@ -150,7 +155,7 @@
           .both {
             -webkit-border-radius: 28;
               -moz-border-radius: 28;
-              border-radius: 30px;
+              border-radius: 50px;
               font-family: Courier New;
               color: #ffffff;
               font-size: 1rem;
@@ -158,6 +163,8 @@
               padding: 10px 20px 10px 20px;
               text-decoration: none;
               margin: 0% 5%;
+              border-width: 1px;
+              border-color: black;
               /* position: relative;
               left: 50%;
               margin-right: -50%;
@@ -172,9 +179,14 @@
               background: #ffffff;
               text-decoration: none;
               color: #011f35;
+              border-width: 1px;
+              border-color: #011f35;
             }
   
 
+            .Explain{ 
+              font-size: 1rem !important;
+            }
 
            /*Footer */
 
